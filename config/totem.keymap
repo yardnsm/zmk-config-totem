@@ -46,13 +46,23 @@
         };
 
         macOS-right-workspace {
-            bindings = <&none>;
+            bindings = <&kp RC(RIGHT)>;
             key-positions = <16 17>;
         };
 
         macOS-left-workspace {
-            bindings = <&none>;
+            bindings = <&kp LC(LEFT)>;
             key-positions = <13 12>;
+        };
+
+        macOS-mission-control {
+            bindings = <&kp RC(UP)>;
+            key-positions = <27 28>;
+        };
+
+        macOS-app-expose {
+            bindings = <&kp RC(DOWN_ARROW)>;
+            key-positions = <24 23>;
         };
     };
 
