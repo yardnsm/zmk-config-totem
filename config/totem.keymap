@@ -23,10 +23,10 @@
 #define TVP2 5
 
 &mt {
-    quick-tap-ms = <100>;
+    quick-tap-ms = <130>;
     global-quick-tap;
     flavor = "tap-preferred";
-    tapping-term-ms = <170>;
+    tapping-term-ms = <200>;
 };
 
 / {
@@ -47,22 +47,22 @@
 
         macOS-right-workspace {
             bindings = <&kp RC(RIGHT)>;
-            key-positions = <16 17>;
+            key-positions = <28 27>;
         };
 
         macOS-left-workspace {
             bindings = <&kp LC(LEFT)>;
-            key-positions = <13 12>;
+            key-positions = <24 23>;
         };
 
         macOS-mission-control {
             bindings = <&kp RC(UP)>;
-            key-positions = <27 28>;
+            key-positions = <27 26>;
         };
 
         macOS-app-expose {
             bindings = <&kp RC(DOWN_ARROW)>;
-            key-positions = <24 23>;
+            key-positions = <25 24>;
         };
     };
 
@@ -97,10 +97,10 @@
 
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
-        nav_layer {
+        num_layer {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
-            label = "NAVI";
+            label = "NUM";
 
             // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
             //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
@@ -114,16 +114,16 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp ESC    &bt BT_CLR  &kp UP    &kp EQUAL  &kp LBRC    &kp RBRC  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_PLUS
-        &kp LSHFT  &kp LEFT    &kp DOWN  &kp RIGHT  &kp LBKT    &kp RBKT  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_MINUS
-&trans  &trans     &kp PG_UP   &kp CAPS  &kp PG_DN  &kp LPAR    &kp RPAR  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_MULTIPLY  &trans
-                               &trans    &trans     &trans      &mo 3     &kp KP_N0  &kp DOT
+        &kp ESC    &bt BT_CLR  &trans    &trans     &kp LBRC          &kp RBRC   &kp N7     &kp N8   &kp N9  &kp KP_PLUS
+        &kp LSHFT  &trans      &trans    &trans     &kp MINUS         &kp PLUS   &kp N4     &kp N5   &kp N6  &kp KP_MINUS
+&trans  &trans     &kp PG_UP   &kp CAPS  &kp PG_DN  &kp UNDERSCORE    &kp EQUAL  &kp N1     &kp N2   &kp N3  &kp KP_MULTIPLY  &kp TILDE
+                               &trans    &trans     &trans            &mo 3      &kp KP_N0  &kp DOT
             >;
         };
 
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
-        sim_layer {
+        sym_layer {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
             label = "SYM";
@@ -140,10 +140,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET     &kp AMPS      &kp ASTERISK  &kp SQT     &kp DQT
-        &trans    &trans  &trans    &trans    &trans       &kp LEFT      &kp DOWN      &kp UP        &kp DOWN    &trans
-&trans  &trans    &trans  &trans    &trans    &trans       &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PREV    &kp C_NEXT  &kp BSLH  &trans
-                          &trans    &none     &mo 3        &trans        &kp C_PP      &trans
+        &kp EXCL   &kp AT    &kp HASH              &kp DLLR               &kp PRCNT          &kp CARET     &kp AMPS      &kp ASTERISK  &kp SQT     &kp DQT
+        &kp MINUS  &kp HOME  &kp PAGE_UP           &kp PAGE_DOWN          &kp END            &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT   &trans
+&trans  &trans     &kp PIPE  &trans                &kp LEFT_BRACE         &kp RIGHT_BRACE    &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PREV    &kp C_NEXT  &kp BSLH  &trans
+                             &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &mo 3              &trans        &trans        &kp C_PP
             >;
         };
 
