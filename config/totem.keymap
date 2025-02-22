@@ -35,22 +35,22 @@
 
         macOS-right-workspace {
             bindings = <&kp RC(RIGHT)>;
-            key-positions = <28 27>;
+            key-positions = <>;
         };
 
         macOS-left-workspace {
             bindings = <&kp LC(LEFT)>;
-            key-positions = <24 23>;
+            key-positions = <>;
         };
 
         macOS-mission-control {
             bindings = <&kp RC(UP)>;
-            key-positions = <27 26>;
+            key-positions = <>;
         };
 
         macOS-app-expose {
             bindings = <&kp RC(DOWN_ARROW)>;
-            key-positions = <25 24>;
+            key-positions = <>;
         };
     };
 
