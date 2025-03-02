@@ -61,7 +61,7 @@
             #binding-cells = <2>;
             bindings = <&kp>, <&kp>;
 
-            tapping-term-ms = <200>;
+            tapping-term-ms = <240>;
             quick-tap-ms = <130>;
             hold-trigger-on-release;
             hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 25 32 33 34 13 14 23 24 25 32 33 37 36 35>;
@@ -74,7 +74,7 @@
             #binding-cells = <2>;
             bindings = <&kp>, <&kp>;
 
-            tapping-term-ms = <200>;
+            tapping-term-ms = <240>;
             quick-tap-ms = <130>;
             hold-trigger-on-release;
             flavor = "balanced";
@@ -156,10 +156,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp EXCL   &kp AT    &kp HASH              &kp DLLR               &kp PRCNT    &kp CARET     &kp AMPS      &kp ASTERISK  &kp SQT     &kp DQT
-        &trans     &trans    &trans                &trans                 &kp C_PP     &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT   &trans
-&trans  &kp MINUS  &kp PIPE  &trans                &kp UNDERSCORE         &kp MINUS    &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PREV    &kp C_NEXT  &kp BSLH  &kp GRAVE
-                             &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &mo 3        &trans        &trans        &trans
+                &kp EXCL   &kp AT    &kp HASH              &kp DLLR               &kp PRCNT    &kp CARET     &kp AMPS      &kp ASTERISK  &kp SQT     &kp DQT
+                &trans     &trans    &trans                &trans                 &kp C_PP     &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT   &trans
+&kp LEFT_SHIFT  &kp MINUS  &kp PIPE  &trans                &kp UNDERSCORE         &kp MINUS    &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PREV    &kp C_NEXT  &kp BSLH  &kp GRAVE
+                                     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &mo 3        &trans        &trans        &trans
             >;
         };
 
