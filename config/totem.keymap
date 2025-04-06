@@ -130,10 +130,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp ESC    &trans       &trans  &trans         &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp N7        &kp N8   &kp N9  &kp PLUS
-        &kp LSHFT  &trans       &trans  &trans         &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp N4        &kp N5   &kp N6  &kp EQUAL
-&trans  &trans     &kp PAGE_UP  &trans  &kp PAGE_DOWN  &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp N1        &kp N2   &kp N3  &kp BACKSLASH  &kp TILDE
-                                &trans  &trans         &trans                  &mo 3                  &kp NUMBER_0  &kp DOT
+        &kp ESC    &trans       &trans  &trans         &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp N7        &kp N8  &kp N9  &kp PLUS
+        &kp LSHFT  &trans       &trans  &trans         &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp N4        &kp N5  &kp N6  &kp EQUAL
+&trans  &trans     &kp PAGE_UP  &trans  &kp PAGE_DOWN  &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp N1        &kp N2  &kp N3  &kp BACKSLASH  &kp TILDE
+                                &trans  &trans         &trans                  &mo 3                  &kp NUMBER_0  &trans
             >;
         };
 
@@ -156,10 +156,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                &kp EXCL   &kp AT    &kp HASH              &kp DLLR               &kp PRCNT    &kp CARET     &kp AMPS      &kp ASTERISK  &kp SQT     &kp DQT
-                &trans     &trans    &trans                &trans                 &kp C_PP     &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT   &trans
-&kp LEFT_SHIFT  &kp MINUS  &kp PIPE  &trans                &kp UNDERSCORE         &kp MINUS    &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PREV    &kp C_NEXT  &kp BSLH  &kp GRAVE
-                                     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &mo 3        &trans        &trans        &trans
+                &kp EXCL   &kp AT    &kp HASH          &kp DLLR           &kp PRCNT    &kp CARET     &kp AMPS      &kp ASTERISK  &kp SQT     &kp DQT
+                &trans     &trans    &trans            &trans             &kp C_PP     &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT   &trans
+&kp LEFT_SHIFT  &kp MINUS  &kp PIPE  &trans            &kp UNDERSCORE     &kp MINUS    &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PREV    &kp C_NEXT  &kp BSLH  &kp GRAVE
+                                     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &mo 3        &trans        &trans        &trans
             >;
         };
 
