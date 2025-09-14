@@ -53,6 +53,11 @@
             bindings = <&kp RC(DOWN_ARROW)>;
             key-positions = <>;
         };
+
+        macOS-emoji {
+            bindings = <&kp RC(RG(SPACE))>;
+            key-positions = <5 6>;
+        };
     };
 
     behaviors {
@@ -159,10 +164,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp ESC    &trans       &trans  &trans         &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp N7        &kp N8  &kp N9  &kp PLUS
-        &kp LSHFT  &trans       &trans  &trans         &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp N4        &kp N5  &kp N6  &kp EQUAL
-&trans  &trans     &kp PAGE_UP  &trans  &kp PAGE_DOWN  &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp N1        &kp N2  &kp N3  &kp BACKSLASH  &kp TILDE
-                                &trans  &trans         &trans                  &mo 3                  &kp NUMBER_0  &trans
+        &caps_word  &trans       &trans  &trans         &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp N7        &kp N8  &kp N9  &kp PLUS
+        &kp LSHFT   &trans       &trans  &trans         &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp N4        &kp N5  &kp N6  &kp EQUAL
+&trans  &trans      &kp PAGE_UP  &trans  &kp PAGE_DOWN  &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp N1        &kp N2  &kp N3  &kp BACKSLASH  &kp TILDE
+                                 &trans  &trans         &trans                  &mo 3                  &kp NUMBER_0  &trans
             >;
         };
 
