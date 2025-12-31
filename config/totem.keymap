@@ -116,6 +116,15 @@
         };
     };
 
+    macros {
+        macos_switch_lang: macos_switch_land {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(SPACE)>;
+            label = "MACOS_SWITCH_LAND";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -190,10 +199,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                &kp EXCL       &kp AT    &kp HASH          &kp DLLR           &kp PRCNT    &kp CARET     &kp AMPS      &kp ASTERISK  &kp SQT     &kp DQT
-                &kp RS(EQUAL)  &trans    &trans            &trans             &kp C_PP     &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT   &trans
-&kp LEFT_SHIFT  &kp MINUS      &kp PIPE  &trans            &kp UNDERSCORE     &kp MINUS    &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PREV    &kp C_NEXT  &kp BSLH  &kp GRAVE
-                                         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &mo 3        &trans        &trans        &trans
+                &kp EXCL       &kp AT    &kp HASH            &kp DLLR           &kp PRCNT    &kp CARET     &kp AMPS      &kp ASTERISK  &kp SQT     &kp DQT
+                &kp RS(EQUAL)  &trans    &trans              &trans             &kp C_PP     &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT   &trans
+&kp LEFT_SHIFT  &kp MINUS      &kp PIPE  &macos_switch_lang  &kp UNDERSCORE     &kp MINUS    &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PREV    &kp C_NEXT  &kp BSLH  &kp GRAVE
+                                         &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &mo 3        &trans        &trans        &trans
             >;
         };
 
